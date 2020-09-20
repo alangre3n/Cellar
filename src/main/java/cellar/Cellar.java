@@ -49,9 +49,8 @@ public class Cellar {
 
     @Override
     public String toString() {
-        if(banks.equals(0)) {
-            String s="Погреб пуст";
-            return s;
+        if(banks.size()==0) {
+            return "Погреб пуст";
         }
         else {
             return banks.toString();
