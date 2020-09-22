@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Cellar cellar = new Cellar();
         cellar.putBank(BankType.TOMATO, "баночка помидорчиков");
-        cellar.getBank("жопа");
+        cellar.getBank("баночка помидорчиков");
         System.out.println(cellar);
     }
 }

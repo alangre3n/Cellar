@@ -1,7 +1,5 @@
 package cellar;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,10 +10,10 @@ public class Cellar {
 
     public void getBank(String name) {
         try {
-            for (int i = 0; i < banks.size(); i++) {
-                if (banks.get(i).name.equals(name)) {
-                    System.out.println("Банка " + banks.get(i).name + " взята из погреба");
-                    banks.remove(i);
+            for (Bank bank : banks) {
+                if (bank.name.equals(name)) {
+                    System.out.println("Банкау " + bank.name + " взяли из погреба");
+                    banks.remove(bank);
                 }
             }
         }
@@ -28,32 +26,33 @@ public class Cellar {
         switch (type) {
             case CUCUMBER:
                 banks.add(new Cucumber(name));
-                System.out.println("Банку соленых огурцов" + name + " положили в погреб");
+                System.out.println("Банку " + name + " положили в погреб");
                 break;
             case TOMATO:
                 banks.add(new Tomato(name));
-                System.out.println("Банку соленых помидоров " + name + " положили в погреб");
+                System.out.println("Банку " + name + " положили в погреб");
                 break;
             case SQUASH:
                 banks.add(new Squash(name));
-                System.out.println("Банку соленой тыквы " + name + " положили в погреб");
+                System.out.println("Банку " + name + " положили в погреб");
                 break;
             case MUSHROOM:
                 banks.add(new Mushroom(name));
-                System.out.println("Банку соленых грибов " + name + " положили в погреб");
+                System.out.println("Банку " + name + " положили в погреб");
                 break;
             default:
-                throw new RuntimeException("Wrong type");
+                throw new RuntimeException("Неверный тип данных");
         }
     }
 
     @Override
     public String toString() {
-        if(banks.size()==0) {
-            return "Погреб пуст";
-        }
-        else {
             return banks.toString();
-        }
     }
+
+ //public Bank bankAdd (BankType type, String name) {
+ //    Bank Vegetable = new
+ //    System.out.println("Банку " + name + " положили в погреб");
+ //    return new
+ //}
 }
