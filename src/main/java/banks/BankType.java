@@ -1,8 +1,11 @@
-package cellar;
+package banks;
 
 public enum BankType {
     TOMATO,
     CUCUMBER,
     MUSHROOM,
-    SQUASH
+    GARLIC,
+    RADISH,
+    CABBAGE,
+    MARROW
 }

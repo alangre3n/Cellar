@@ -1,7 +1,9 @@
-package cellar;
+package banks;
 
-public class Squash extends Bank {
-    public Squash (String name){
+import cellar.Bank;
+
+public class Radish extends Bank {
+    public Radish (String name){
         super(name);
     }
 
