@@ -1,4 +1,4 @@
-package banks;
+package cellar.banks;
 
 import cellar.Bank;
 

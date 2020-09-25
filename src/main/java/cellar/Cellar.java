@@ -1,6 +1,6 @@
 package cellar;
 
-import banks.*;
+import cellar.banks.*;
 
 import java.util.ArrayList;
 import java.util.List;

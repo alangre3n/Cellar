@@ -1,4 +1,4 @@
-package banks;
+package cellar.banks;
 
 public class CrashException extends Throwable {
     public CrashException(String message) {

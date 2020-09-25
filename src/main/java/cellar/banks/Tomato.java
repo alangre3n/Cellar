@@ -1,9 +1,9 @@
-package banks;
+package cellar.banks;
 
 import cellar.Bank;
 
-public class Garlic extends Bank {
-    public Garlic(String name){
+public class Tomato extends Bank {
+    public Tomato (String name){
         super(name);
     }
 

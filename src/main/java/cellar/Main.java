@@ -1,7 +1,7 @@
 package cellar;
 
-import banks.BankType;
-import banks.CrashException;
+import cellar.banks.BankType;
+import cellar.banks.CrashException;
 
 public class Main {
     public static void main(String[] args) throws CrashException {
